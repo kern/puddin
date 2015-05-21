@@ -1,0 +1,11 @@
+{
+  "name": "puddin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "BSD-3-Clause"
+}
