@@ -1,1 +1,207 @@
+orange = #D99517;
+
+* { box-sizing: border-box; }
+
 global-reset()
+
+body {
+    background-color: orange;
+    color: white;
+}
+
+.page {
+    margin: 0 auto;
+    width: 640px;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    font: italic bold 48px/60px serif;
+}
+
+.quote {
+    overflow: hidden;
+    margin: 20px 0;
+
+    .text {
+        padding: 30px 20px 0 20px;
+        background: transparent;
+        font: 14px/20px sans-serif;
+        color: black;
+    }
+
+    .speaker {
+        color: black;
+        font: bold italic 14px/20px sans-serif;
+        padding-bottom: 30px;
+
+        &:before {
+            content: '— ';
+        }
+    }
+}
+
+.voter {
+    float: left;
+    width: 60px;
+    height: 100px;
+    padding: 20px 0;
+    text-align: center;
+    font: 14px/20px sans-serif;
+    position: relative;
+
+    .up-vote {
+        position: absolute;
+        top: 20px;
+        width: 60px;
+        height: 20px;
+        color: orange;
+
+        &:before {
+            content: '^';
+        }
+    }
+
+    .down-vote {
+        position: absolute;
+        top: 60px;
+        width: 60px;
+        height: 20px;
+        color: orange;
+
+        &:before {
+            content: 'v';
+        }
+    }
+
+    .count {
+        position: absolute;
+        top: 40px;
+        width: 60px;
+        font: bold 18px/20px sans-serif;
+        color: #333;
+    }
+
+    .clickable {
+        cursor: pointer;
+        color: alpha(orange, 25%);
+
+        &:hover {
+            color: orange;
+        }
+    }
+}
+
+.order-select {
+    overflow: auto;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+
+    .latest {
+        border-radius: 5px 0 0 5px;
+        border: 1px solid white;
+        float: left;
+        width: 50%;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .popular {
+        border-radius: 0 5px 5px 0;
+        border: 1px solid white;
+        border-left: 0;
+        float: left;
+        width: 50%;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .selected {
+        font-weight: bold;
+        cursor: initial;
+        background: white;
+        color: orange;
+    }
+}
+
+form {
+    width: 100%;
+    overflow: auto;
+    display: table;
+    margin: 20px 0;
+
+    .left {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    .right {
+        display: table-cell;
+        width: 120px;
+        vertical-align: top;
+    }
+}
+
+.card {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+textarea {
+    width: 100%;
+    height: 70px;
+    display: block;
+    border: 0;
+    border-bottom: 1px solid #EEE;
+    padding: 10px;
+    background: transparent;
+    font: 14px/1 sans-serif;
+}
+
+.dash {
+    width: 30px;
+    font: bold italic 14px/30px sans-serif;
+    color: black;
+    float: left;
+    text-align: right;
+    background: transparent;
+
+    &:before {
+        content: '— ';
+    }
+}
+
+input {
+    width: calc(100% - 30px);
+    height: 30px;
+    display: block;
+    background: transparent;
+    border: 0;
+    padding: 0 8px;
+    font: bold italic 14px/1 sans-serif;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    border: 5px outset darken(orange, 10%);
+    background: lighten(orange, 10%);
+    color: white;
+    font: 18px/20px sans-serif;
+    cursor: pointer;
+
+    &:disabled {
+        border: 5px solid darken(orange, 10%);
+        background: orange;
+        cursor: initial;
+    }
+
+    &:active:enabled {
+        border: 5px inset darken(orange, 10%);
+        background: darken(orange, 15%);
+    }
+}
