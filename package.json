@@ -1,11 +1,11 @@
 {
   "name": "puddin",
   "version": "1.0.0",
-  "description": "",
+  "description": "Share quotes with your friends.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "",
+  "author": "Alex Kern <alex@kern.io>",
   "license": "BSD-3-Clause"
 }
