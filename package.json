@@ -7,5 +7,17 @@
     "start": "node index.js"
   },
   "author": "Alex Kern <alex@kern.io>",
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "alt": "^0.17.1",
+    "babel": "^5.8.21",
+    "browserify-middleware": "^7.0.0",
+    "express": "^4.13.3",
+    "morgan": "^1.6.1",
+    "nib": "^1.1.0",
+    "react": "^0.13.3",
+    "react-frozenhead": "^0.3.0",
+    "react-router": "^0.13.3",
+    "stylus": "^0.52.0"
+  }
 }
