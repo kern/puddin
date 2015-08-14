@@ -8,6 +8,13 @@
   },
   "author": "Alex Kern <alex@kern.io>",
   "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pguth/puddin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pguth/puddin/issues"
+  },
   "dependencies": {
     "alt": "^0.17.1",
     "babel": "^5.8.21",
